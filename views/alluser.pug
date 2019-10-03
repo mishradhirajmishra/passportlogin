@@ -1,0 +1,23 @@
+extends layout
+
+block content
+ .container
+   .col-xl-8.offset-md-2
+        h1.text-center #{title} 
+        include partials/message
+        table.table
+          thead
+            tr
+              th Id
+              th Name
+              th Email
+              th password
+          tbody
+            each user, i in alluser
+              tr
+                td #{user._id}
+                td #{user.name}
+                td #{user.email}
+                td #{user.password}
+
+          

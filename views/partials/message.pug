@@ -1,0 +1,13 @@
+if(typeof error != 'undefined')
+    each err, index in error
+        .alert.alert-danger.alert-dismissible
+            a.close(href='#' data-dismiss='alert' aria-label='close') &times;
+            strong #{err.msg} gg!
+if(success_msg != '')
+      .alert.alert-success.alert-dismissible
+            a.close(href='#' data-dismiss='alert' aria-label='close') &times;
+            strong #{success_msg}!
+if(error_msg != '')
+      .alert.alert-warning.alert-dismissible
+            a.close(href='#' data-dismiss='alert' aria-label='close') &times;
+            strong #{error_msg}!
