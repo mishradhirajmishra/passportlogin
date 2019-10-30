@@ -13,7 +13,7 @@ router.get('/dashboard',ensureAuthenticated, function(req, res, next) {
   res.render('dashboard',{title:'Dashboard'});
 });
 router.get('/login', function(req, res, next) {
-  console.log(req.session.id)
+  // console.log(req.session.id)
   res.render('login',{title:'Login'});
 });
 
